@@ -83,7 +83,7 @@ edit the name of folder:
 │   ├── _app.js
 │   └── index.jsx
 ```
-after you edit the folder name, you have to edit the variable, open ``../pages/the-admin-page-for-answer-the-question/index.jsx`` 
+after you edit the folder name, you have to edit the variable in 3 files, open ``../pages/the-admin-page-for-answer-the-question/index.jsx`` , ``../pages/the-admin-page-for-answer-the-question/Name.jsx`` and ``../pages/the-admin-page-for-answer-the-question/Random.jsx``
 ```
 ...
 
