@@ -90,6 +90,7 @@ const Dashboard = ({ onClick }) => {
 **Important**: *after you edit them, don't share the url or folder name, because is a admin page*
 
 ```
-Support me because there are still many updates in the future
+Support me with buy me a coffee because there are still many updates in the future
 Thanks You🤗
 ```
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/https://www.buymeacoffee.com/kakoeng221X) [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/http://ko-fi.com/kungs) 
