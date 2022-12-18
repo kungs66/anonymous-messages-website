@@ -17,7 +17,7 @@ const AlertBox = ({ isNick, isClick }) => {
       </div>
       <div
         onClick={isClick}
-        className="bg-[#fcc60c] ml-2 items-center rounded-md py-3 px-4 border-black border-2"
+        className="bg-[#fcc60c] ml-2 items-center rounded-md py-3 px-4 border-black border-2 cursor-pointer"
       >
         <ImDice size={26} />
       </div>
