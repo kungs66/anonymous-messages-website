@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a19cff;
+  color: #212327;
+  margin: auto;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.rgb-text {
+  color: transparent;
+  background-image: linear-gradient(
+    to left,
+    #2ecc71,
+    #3498db,
+    #9b59b6,
+    #f39c12
+  );
+  -webkit-background-clip: text;
+  animation: animate 8s linear infinite;
+  background-size: 500%;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  0% {
+    background-position: 0 100%;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
