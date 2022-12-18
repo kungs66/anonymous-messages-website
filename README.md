@@ -1,34 +1,104 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div>
+<img src="https://user-images.githubusercontent.com/79618538/208278696-3da631b3-a7fc-4178-bd29-31743571ccfe.png" width="700" />
+</div>
 
-## Getting Started
+## What The Technologies
+<ul>
+  <li>
+    <a href="https://nextjs.org" target="_blank">Next JS</a>
+  </li>
+  <li>
+    <a href="https://tailwindcss.com" target="_blank">Tailwind</a>
+  </li>
+  <li>
+    <a href="https://firebase.google.com" target="_blank">Firebase</a>
+  </li>
+</ul>
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
+## How To Use
+`1.` First, you need clone this repository 
+```
+git clone https://github.com/kungs66/anonymous-messages-website.git
+```
+after clone the repository, run command 
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`2.` Edit the ``/firebase.js`` file:
+```
+...
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+const firebaseConfig = {
+  ...
+};
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+...
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+you need make firebase application to get the firebase config, go to https://firebase.google.com and following the step
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+`3.` Create realtime database
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Set the database location, I used ``United States (us-central1)``
+<br>
+<img src="https://user-images.githubusercontent.com/79618538/208272066-d0738738-2680-4ad1-b049-0fa65b91cbcc.png" width="500" />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<img src="https://user-images.githubusercontent.com/79618538/208272230-8561c19a-f2b3-4900-8de5-da54637bd415.png" width="500" />
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`4.` Edit rules of realtime database, change the rules read and write to `true`
+```
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+`5.` Import the ``/Basics-database.json`` file to realtime database <br>
+  q: why import this file to firebase realtime database? <br>
+  a: because when import the json file to firebase realtime database, data on the database will fill of basics data, if not import json file to database, the website will error while fetch the data from database.
+
+
+`6.` Don't worry, you can edit the Name display on the website and edit the Dice data <br>
+go to the admin page `https://your-url.com/the-admin-page-for-answer-the-question`
+
+
+`7.` Edit url the admin page
+edit the name of folder:
+```
+./anonymous-messages-website/
+│
+├── pages/
+│   ├── the-admin-page-for-answer-the-question/ <-- Edit this folder name
+|   |   ├── index.jsx
+|   |   ├── Name.jsx
+|   |   └── Random.jsx
+│   ├── _app.js
+│   └── index.jsx
+```
+after you edit the folder name, you have to edit the variable, open ``../pages/the-admin-page-for-answer-the-question/index.jsx`` 
+```
+...
+
+const Dashboard = ({ onClick }) => {
+  ...
+
+  const url = "the-admin-page-for-answer-the-question"; <-- Edit this variable same with name of folder
+
+  ...
+
+}
+```
+**Important**: *after you edit them, don't share the url or folder name, because is a admin page*
+
+```
+Support me with buy me a coffee because there are still many updates in the future
+Thanks You🤗
+```
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/https://www.buymeacoffee.com/kakoeng221X) [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/http://ko-fi.com/kungs) 
