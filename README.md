@@ -12,9 +12,6 @@
 </ul>
 
 
-
-<br>
-
 ## How To Use
 `1.` First, you need clone this repository 
 ```
