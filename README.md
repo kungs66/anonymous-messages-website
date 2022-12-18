@@ -88,3 +88,8 @@ const Dashboard = ({ onClick }) => {
 }
 ```
 **Important**: *after you edit them, don't share the url or folder name, because is a admin page*
+
+```
+Support me because there are still many updates in the future
+Thanks You🤗
+```
