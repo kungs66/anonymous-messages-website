@@ -21,6 +21,10 @@
 ```
 git clone https://github.com/kungs66/anonymous-messages-website.git
 ```
+after clone the repository, run command 
+```
+npm install
+```
 
 `2.` Edit the ``/firebase.js`` file:
 ```
