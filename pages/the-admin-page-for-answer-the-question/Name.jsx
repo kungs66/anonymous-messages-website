@@ -9,6 +9,7 @@ import Button from "../../components/Button";
 
 const Name = () => {
   const [inputNick, setInputNick] = useState("");
+  const url = "/the-admin-page-for-answer-the-question";
 
   const setPost = useSetValue();
   const nick = useGetValue("nick").snapshot;
@@ -32,7 +33,7 @@ const Name = () => {
   return (
     <div>
       <div className="sticky z-50 top-0 bg-[#2c2c2c] text-slate-100 flex  shadow-lg py-6 px-8 items-center">
-        <Link href="/a7dh3217sdj2ye1ed98hd128sdj8j128e818ed8j18d2j182d">
+        <Link href={url}>
           <FaArrowLeft />
         </Link>
         <h2 className="ml-6 font-semibold text-xl">Edit Name</h2>
@@ -57,14 +58,14 @@ const Name = () => {
         <div>
           <input
             className="bg-white outline outline-2 text-sm font-medium rounded-md mb-4 py-4 w-80 text-center focus:outline-2"
-            placeholder="Tulis Nama Kamu..."
+            placeholder="Your Name..."
             type="text"
             onChange={(event) => setInputNick(event.target.value)}
             value={inputNick}
             autoComplete="off"
           />
           <div className="flex justify-center">
-            <Button nameOf="Ganti Nama" isClick={() => addNick()} />
+            <Button nameOf="Change Name" isClick={() => addNick()} />
           </div>
         </div>
       </div>

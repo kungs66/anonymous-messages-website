@@ -8,11 +8,11 @@ import { FaTrash } from "react-icons/fa";
 import useSetValue from "../../hooks/useSetValue";
 import useGetValue from "../../hooks/useGetValue";
 import Button from "../../components/Button";
-import { fadeInUp, stagger, staggerLate } from "../../components/MontionComp";
 
 const Random = () => {
   const [inputData, setInputData] = useState("");
   const refs = useRef();
+  const url = "/the-admin-page-for-answer-the-question";
 
   const setPost = useSetValue();
   const dadu = useGetValue("dadu").snapshot;
@@ -44,10 +44,7 @@ const Random = () => {
   return (
     <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
       <div className="sticky z-50 top-0 bg-[#2c2c2c] text-slate-100 flex  shadow-lg py-6 px-8 items-center">
-        <Link
-          href="/a7dh3217sdj2ye1ed98hd128sdj8j128e818ed8j18d2j182d"
-          ref={refs}
-        >
+        <Link href={url} ref={refs}>
           <FaArrowLeft />
         </Link>
         <h2 className="ml-6 font-semibold text-xl">Edit Dice</h2>
@@ -79,13 +76,13 @@ const Random = () => {
       <div className="text-center py-4 ">
         <input
           className="bg-white text-sm rounded-md font-medium mb-4 py-4 w-80 text-center outline outline-2 focus:outline-2"
-          placeholder="Tambah Teks..."
+          placeholder="Add Text Here..."
           type="text"
           onChange={(event) => setInputData(event.target.value)}
           value={inputData}
           autoComplete="off"
         />
-        <Button nameOf="Buat Teks" isClick={() => addRandom()} />
+        <Button nameOf="Add Text" isClick={() => addRandom()} />
       </div>
     </motion.div>
   );
