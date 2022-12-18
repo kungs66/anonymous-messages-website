@@ -1,3 +1,20 @@
+## What The Technologies
+<ul>
+  <li>
+    <a href="https://nextjs.org" target="_blank">Next JS</a>
+  </li>
+  <li>
+    <a href="https://tailwindcss.com" target="_blank">Tailwind</a>
+  </li>
+  <li>
+    <a href="https://firebase.google.com" target="_blank">Firebase</a>
+  </li>
+</ul>
+
+
+
+<br>
+
 ## How To Use
 `1.` First, you need clone this repository 
 ```
